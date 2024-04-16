@@ -1,0 +1,112 @@
+.follow-rec-header {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.follow-rec {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  background-color: white;
+}
+
+.banner {
+  width: 50px;
+  height: 50px;
+}
+.main-content {
+  display: flex;
+
+  width: 90%;
+  justify-content: space-between;
+
+  max-width: 1198px;
+  margin: 56px auto;
+
+  gap: 4px;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.profile {
+  background-color: rgb(169, 169, 255);
+  width: 298px;
+}
+
+.tweets {
+  background-color: rgb(255, 169, 169);
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.tweet {
+  display: flex;
+  padding-top: 10px;
+  background-color: white;
+}
+
+.account-name {
+  color: black;
+}
+
+.follow-button {
+  background-color: white;
+  border-color: rgb(62, 194, 255);
+  border-width: 3px;
+  border: solid;
+  border-radius: 15px;
+  padding: 5px 20px 5px 20px;
+  color: rgb(62, 194, 255);
+  font-weight: bold;
+  font-size: 15px;
+  margin-left: 25%;
+}
+
+button {
+  background-color: white;
+  border-color: rgb(62, 194, 255);
+  border-width: 3px;
+  border: solid;
+  border-radius: 15px;
+  padding: 5px 20px 5px 20px;
+  color: rgb(62, 194, 255);
+  font-weight: bold;
+  font-size: 15px;
+  margin-left: 25%;
+}
+
+.profile-image {
+}
+
+body {
+  background-color: rgb(199, 102, 162);
+}
+
+.tag {
+  color: gray;
+}
+
+.who-to-follow {
+  background-color: white;
+  flex-direction: column;
+  background-color: rgb(255, 169, 169);
+  gap: 2px;
+}
+
+.follow-header {
+  font-size: 20px;
+}
+
+.profile-stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 8px;
+}
