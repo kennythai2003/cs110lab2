@@ -1,126 +1,164 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <title>lab2 page</title>
-  </head>
+<html lang="en">
 
-  <body>
-    <!-- TODO: Create HTML elements for Twitter mockup inside body -->
-    <div class="main-content">
-      <div class="profile">
-        <img
-          class="profile-image"
-          src="./images/ratatouille.jpg"
-          alt="available"
-        />
-        <img
-          class="banner"
-          src="./images/ratatouille-banner.png"
-          alt="Banner"
-        />
-        <p>This is me.</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <title>Lab 2: Static Twitter Page</title>
+</head>
+
+<body>
+  <a id="skip" href="#maincontent">Skip to main content</a>
+  <div class="navigation" role="navigation">
+    <div class="navbar-left-items">
+      <div class="navbar-item">
+        <a href="">
+          <p> Home </p>
+        </a>
+      </div>
+      <div class="navbar-item">
+        <a href="">
+          <p> Moments </p>
+        </a>
+      </div>
+      <div class="navbar-item">
+        <a href="">
+          <p> Notifications </p>
+        </a>
+      </div>
+      <div class="navbar-item">
+        <a href="">
+          <p> Messages </p>
+        </a>
+      </div>
+    </div>
+    <div class="navbar-middle-items">
+      <img class="twitter-icon" src="./images/twitter-logo.png" alt="Twitter Logo">
+    </div>
+    <div class="navbar-right-items">
+      <button class="tweetButton">
+        Tweet
+      </button>
+    </div>
+  </div>
+
+  <main id="maincontent">
+    <div class="main-content" role="main">
+      <div class="content-left">
+        <img class="cover-picture" src="./images/RatatouilleBanner.jpg" alt="Profile Banner/Cover Picture" />
+        <div class="profile-picture-container">
+          <img class="profile-picture" src="./images/ratatouille.jpg" alt="Profile Image" />
+          <div class="profile-name-container">
+            <div class="profile-account-handle">
+              @remy
+            </div>
+            <div class="profile-account-name">
+              Remy
+            </div>
+          </div>
+        </div>
         <div class="profile-stats">
-          <div class="profile-tweets">
-            <p>Tweets</p>
+          <div class="profile-stats-info">
+            Tweets
+            <div class="profile-stats-text">
+              120
+            </div>
           </div>
-          <div class="profile-following">
-            <p>Following</p>
+          <div class="profile-stats-info">
+            Followers
+            <div class="profile-stats-text">
+              120
+            </div>
           </div>
-          <div class="profile-followers">
-            <p>Followers</p>
+          <div class="profile-stats-info">
+            Following
+            <div class="profile-stats-text">
+              130
+            </div>
           </div>
         </div>
       </div>
-
       <div class="tweets">
         <div class="tweet">
-          <img src="./images/ratatouille.jpg" alt="Avatar" />
-
+          <img class="avatar" src="./images/ratatouille.jpg" alt="Avatar" />
           <div class="tweet-info">
             <p class="tag">
               <strong class="account-name"> Remy </strong> @remy Nov 19
             </p>
-            <p>
+            <p class="tweet-text">
               I'm taking this class called CS110 and the TAs are all so
               <strong>cool</strong>!
             </p>
           </div>
         </div>
-
         <div class="tweet">
-          <img src="./images/ratatouille.jpg" alt="Avatar" />
-
+          <img class="avatar" src="./images/ratatouille.jpg" alt="Avatar" />
           <div class="tweet-info">
             <p class="tag">
               <strong class="account-name"> Remy </strong> @remy Nov 19
             </p>
-            <p>
+            <p class="tweet-text">
               It's 2007. You just got home from elementary school. Your mom has
               pizza bagels in the oven. Rataouille is in theaters. Life is good
             </p>
           </div>
         </div>
         <div class="tweet">
-          <img src="./images/ratatouille.jpg" alt="Avatar" />
-
+          <img class="avatar" src="./images/ratatouille.jpg" alt="Avatar" />
           <div class="tweet-info">
             <p class="tag">
               <strong class="account-name"> Remy </strong> @remy Nov 19
             </p>
-            <p>Let's make some pasta!</p>
+            <p class="tweet-text">Let's make some pasta!</p>
           </div>
         </div>
         <div class="tweet">
-          <img src="./images/ratatouille.jpg" alt="Avatar" />
-
+          <img class="avatar" src="./images/ratatouille.jpg" alt="Avatar" />
           <div class="tweet-info">
             <p class="tag">
               <strong class="account-name"> Remy </strong> @remy Nov 19
             </p>
-            <p>Let's make some pasta!</p>
+            <p class="tweet-text">Let's make some pasta!</p>
           </div>
         </div>
         <div class="tweet">
-          <img src="./images/ratatouille.jpg" alt="Avatar" />
-
+          <img class="avatar" src="./images/ratatouille.jpg" alt="Avatar" />
           <div class="tweet-info">
             <p class="tag">
               <strong class="account-name"> Remy </strong> @remy Nov 19
             </p>
-            <p>Let's make some pasta!</p>
+            <p class="tweet-text">Let's make some pasta!</p>
           </div>
         </div>
       </div>
-
       <div class="who-to-follow">
         <p><strong class="follow-header">Who to follow</strong></p>
         <div class="follow-rec">
+          <img class="avatar" src="./images/linguini.png" alt="Avatar" />
           <div class="follow-rec-header">
-            <img src="./images/linguini.png" alt="Avatar" />
             <p class="tag">
               <strong class="account-name"> Linguini </strong> @linguini
             </p>
-            <div>
-              <button>Follow</button>
+            <div class="button-container">
+              <button class="follow-button">Follow</button>
             </div>
           </div>
         </div>
         <div class="follow-rec">
+          <img class="avatar" src="./images/ratatouille.jpg" alt="Avatar" />
           <div class="follow-rec-header">
-            <img src="./images/ratatouille.jpg" alt="Avatar" />
             <p class="tag">
               <strong class="account-name"> CS110 TA </strong> @cs
             </p>
-            <div>
-              <button>Follow</button>
+            <div class="button-container">
+              <button class="follow-button">Follow</button>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </body>
+  </main>
+</body>
+
 </html>
-å
